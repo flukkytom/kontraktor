@@ -1,0 +1,24 @@
+# Editor configuration normalization
+# @see http://editorconfig.org/
+
+root = true
+
+[*]
+end_of_line = LF
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{php,blade.php}]
+indent_size = 4
+
+[composer.{json,lock}]
+indent_size = 4
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[Makefile]
+indent_style = tab
